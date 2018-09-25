@@ -106,7 +106,7 @@ span.subheading2{
 
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
    .main {
     margin-left: 0%; /* The width is 100%, when the viewport is 800px or smaller */
   }
@@ -143,6 +143,19 @@ span.subheading2{
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 400px) {
+	.main{
+		padding-top: 100px;
+	}
+	.main .about_me {
+		font-size: 25px;
+	}
+	.main .all {
+		font-size:;
+	}
+	.sidenav{
+		height: 250px;
+	}
+
   .sidenav a {
     text-align: center;
     float: none;
@@ -150,30 +163,8 @@ span.subheading2{
 }
 
 
-@media screen and (max-width: 320px) {
-   .main {
-    margin-left: 0%; 
-     /* The width is 100%, when the viewport is 800px or smaller */
-  }
 
-  div{
-    width: 100%;
-  }
-  span.subheading2{
-    position: relative;
-    margin-left: 30px;
-  }
 
-}
-
-@media (min-width: 768px) {
-  .main {
-    min-height: 100vh;
-  }
-  .main {
-    min-width: 18rem;
-  }
-}
 
 
 h1,
