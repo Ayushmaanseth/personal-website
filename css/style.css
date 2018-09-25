@@ -51,7 +51,9 @@
 
 }
 
-
+.sidenav .icon{
+  display: none;
+}
 /* Style page content */
 .main {
     margin-left: 250px; /* Same as the width of the sidebar */
@@ -77,34 +79,25 @@
     margin: 0;
 
 }
-@media screen and (max-width: 760px) {
-  .sidenav {
-    display: none;
-
-  }
-  
-}
 
 
-@media screen and (max-width: 768px) {
+
+
+
+
+@media screen and (max-width: 700px) {
    .main {
-   width: 100% /* The width is 100%, when the viewport is 800px or smaller */
-  }
-
-  div{
-    width: 100%;
-  }
-}
-
-
-
-@media screen and (max-width: 430px) {
-   .main {
+    width:100;
     margin-left: 0px; /* The width is 100%, when the viewport is 800px or smaller */
   }
 
+  .main .about_me p{
+    padding-right: 50px;
+  }
+
   div{
     width: 100%;
+
   }
 span.subheading2{
     position: relative;
@@ -128,10 +121,38 @@ span.subheading2{
 
 }
 
+@media screen and (max-width: 700px) {
+  .sidenav {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    
+  }
+  .sidenav img {display: none;}
+  .sidenav a {
+    float: left;
+    font-size:18px;
+  }
+  
+}
+
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidenav a {
+    text-align: center;
+    float: none;
+  }
+}
+
 
 @media screen and (max-width: 320px) {
    .main {
-    margin-left: 0%; /* The width is 100%, when the viewport is 800px or smaller */
+    margin-left: 0%; 
+     /* The width is 100%, when the viewport is 800px or smaller */
   }
 
   div{

@@ -11,17 +11,16 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/main.js"></script>
-
 
    
+
+
 </head>
 
 
- <body>
+ <body  onload="startTime()">
 
-   <div  class = "sidenav" id = "sidenav">
+   <div scroll="no" class = "sidenav" id = "sidenav">
     <img src="img/profile.jpeg" id = "profile">
    	<a href="#about">About</a>
    	<a href="#experience">Experience</a>
@@ -29,8 +28,9 @@
    	<a href="#projects">Projects</a>
    	<a href="#skills">Skills</a>
    	<a href="#awards">Honors and Awards</a>
-   </div>
 
+   </div>
+  
    <div class="main">
      
      <div class="about_me" id="about">
@@ -167,10 +167,17 @@
           </p>
         </div>
       </div>
-   
+    <div>
+     <canvas id="canvas" width="200" height="200"style="background-color:#333"></canvas>
+	</div>
+
+	<p>Date-Time: <span id="datetime"></span></p>
+
  </div>
 
 </body>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+	<script src="js/main.js"></script>
 
 </html>
