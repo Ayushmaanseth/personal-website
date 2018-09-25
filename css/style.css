@@ -128,6 +128,7 @@ span.subheading2{
     position: fixed;
     padding-bottom: 20px;
     padding-top: 20px;
+    overflow-y: hidden;
 
     
   }
